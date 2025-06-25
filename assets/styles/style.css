@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --blanco: #fafafa;
+  --casiBlanco: #dbdbdb;
+  --grisClaro: #b9b9b9;
+  --gris: #787878;
+  --casiNegro: #2c2c2c;
+  --negro: #141414;
+
+  --primario: #ffd953;
+  --secundario: #535aff;
+  --negativo: #ff5353;
+  --exito: #69f05d;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-size: 1rem;
+}
+
+/* Intro */
+.intro {
+  background-image: url('../images/bg.png');
+  position: relative;
+  height: 616px;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 48px;
+  letter-spacing: -1px;
+  padding-top: 80px;
+}
+
+.welcome__img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Sobre mí */
+.me {
+  height: 538px;
+  background-color: var(--negro);
+  color: var(--blanco);
+  padding: 0 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.me__description {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  padding-top: 41px;
+}
+
+.me__img {
+  padding-top: 57px;
+}
+
+/* Mis servicios */
+.services {
+  background-color: var(--blanco);
+  color: var(--casiNegro);
+}
+
+.services__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 70px;
+}
