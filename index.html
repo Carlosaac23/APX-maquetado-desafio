@@ -8,7 +8,7 @@
     <title>Desafío Maquetado</title>
   </head>
   <body>
-    <div class="intro">
+    <section class="intro">
       <header class="header">
         <img src="assets/images/logo.png" alt="" class="header__logo" />
         <img src="assets/images/burger.svg" alt="" class="header__burger" />
@@ -18,9 +18,9 @@
         <h1 class="welcome__title">Bienvenidxs a mi site</h1>
         <img src="assets/images/marce.png" alt="" class="welcome__img" />
       </section>
-    </div>
+    </section>
 
-    <div class="me">
+    <section class="me">
       <h2 class="me__title">Soy Marce</h2>
       <p class="me__description">
         Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit.
@@ -28,10 +28,56 @@
         amet tincidunt ex. In eleifend justo et sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies dolor.
       </p>
       <img src="assets/images/check.png" alt="" class="me__img" />
-    </div>
+    </section>
 
-    <div class="services">
+    <section class="services">
       <h2 class="services__title">Mis servicios</h2>
-    </div>
+
+      <div class="services__cards">
+        <div class="services__card">
+          <img src="assets/images/desktop.png" alt="" class="services__card-img" />
+          <h2 class="services__card-title">Hago Cosas</h2>
+          <p class="services__card-text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit.
+            Aenean lobortis posuere tristique.
+          </p>
+        </div>
+
+        <div class="services__card">
+          <img src="assets/images/desktop.png" alt="" class="services__card-img" />
+          <h2 class="services__card-title">Y más cosas</h2>
+          <p class="services__card-text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit.
+            Aenean lobortis posuere tristique.
+          </p>
+        </div>
+
+        <div class="services__card">
+          <img src="assets/images/desktop.png" alt="" class="services__card-img" />
+          <h2 class="services__card-title">Y también otras cosas</h2>
+          <p class="services__card-text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit.
+            Aenean lobortis posuere tristique.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__form">
+      <h2 class="form__title">Escribime</h2>
+
+      <form class="form">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+
+        <label for="message">Mensaje</label>
+        <textarea name="message" id="message"></textarea>
+
+        <button type="submit" class="form__btn">Enviar</button>
+      </form>
+    </section>
   </body>
 </html>

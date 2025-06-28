@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 1rem;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .me__description {
-  font-family: Roboto;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: normal;
@@ -98,4 +98,56 @@ body {
   letter-spacing: -2px;
   text-align: center;
   padding-top: 70px;
+  margin-bottom: 44px;
+}
+
+.services__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 104px;
+}
+
+.services__card:last-child {
+  margin-bottom: 66px;
+}
+
+.services__card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 14px 0 15px 0;
+}
+
+.services__card-text {
+  text-align: center;
+  padding: 0 56px;
+}
+
+/* Contact me */
+.section__form {
+  background-color: var(--negro);
+  color: var(--blanco);
+  height: 660px;
+}
+
+.form__title {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 70px;
+}
+
+input,
+textarea {
+  width: 366px;
+  height: 45px;
+  border: 3px solid var(--casiNegro);
+  border-radius: 4px;
 }
