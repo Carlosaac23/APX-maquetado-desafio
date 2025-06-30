@@ -17,6 +17,7 @@
 body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  color: var(--negro);
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -28,16 +29,61 @@ body {
   /* height: 616px; */
 }
 
+@media (min-width: 1440px) {
+  .intro {
+    width: 100%;
+  }
+
+  .header__logo {
+    width: 95px;
+    height: auto;
+  }
+
+  .header__burger {
+    display: none;
+  }
+
+  .header__links {
+    display: flex;
+  }
+}
+
 .header {
   padding: 1.25rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .header__logo {
   width: 3.375rem;
   height: auto;
-  max-width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .header__logo {
+    width: 5.9rem;
+  }
+}
+
+.header__links {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  gap: 25px;
+  list-style: none;
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .header__links {
+    display: flex;
+  }
+}
+
+.header__links a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .welcome {
