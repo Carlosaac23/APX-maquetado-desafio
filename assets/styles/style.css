@@ -18,33 +18,18 @@ body {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: var(--negro);
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Intro */
 .intro {
   background-image: url('../images/bg.png');
-  position: relative;
   /* height: 616px; */
 }
 
 @media (min-width: 1440px) {
   .intro {
-    width: 100%;
-  }
-
-  .header__logo {
-    width: 95px;
-    height: auto;
-  }
-
-  .header__burger {
-    display: none;
-  }
-
-  .header__links {
-    display: flex;
+    padding: 2.25rem 5rem 16.25rem 5rem;
   }
 }
 
@@ -53,6 +38,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 0;
+  }
+
+  .header__burger {
+    display: none;
+  }
 }
 
 .header__logo {
@@ -92,19 +87,32 @@ body {
   align-items: center;
 }
 
+@media (min-width: 1440px) {
+  .welcome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
 .welcome__title {
   font-size: 3rem;
   text-align: center;
   line-height: 48px;
   letter-spacing: -1px;
-  padding: 10rem 0 22.4rem 0;
+  padding: 6.315rem 0 3.625rem 0;
+}
+
+@media (min-width: 1440px) {
+  .welcome__title {
+    width: 313px;
+  }
 }
 
 .welcome__img {
   height: auto;
   max-width: 100%;
-  position: absolute;
-  bottom: 0;
 }
 
 /* Sobre mí */
