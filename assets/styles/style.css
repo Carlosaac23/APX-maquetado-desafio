@@ -83,6 +83,7 @@ body {
 @media (min-width: 1440px) {
   .header__links {
     display: flex;
+    gap: 3.5rem;
   }
 }
 
@@ -103,7 +104,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 36.25rem;
+    height: 33.25rem;
   }
 }
 
@@ -117,7 +118,9 @@ body {
 
 @media (min-width: 1440px) {
   .welcome__title {
+    text-align: start;
     width: 19.563rem;
+    margin-bottom: 10rem;
   }
 }
 
@@ -218,10 +221,25 @@ body {
   margin-bottom: 2.75rem;
 }
 
+@media (min-width: 1440px) {
+  .services__title {
+    font-size: 3rem;
+    margin-bottom: 4.4rem;
+  }
+}
+
 .services__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .services__cards {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
 }
 
 .services__card {
@@ -253,12 +271,33 @@ body {
   /* height: 660px; */
 }
 
+@media (min-width: 1440px) {
+  .section__form {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    padding: 7.25rem 18.75rem 6rem 18.75rem;
+  }
+
+  .form__right {
+    width: 23.5rem;
+  }
+}
+
 .form__title {
   font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-size: 2rem;
   letter-spacing: -2px;
   text-align: center;
   padding: 4.375rem 0 2.313rem 0;
+}
+
+@media (min-width: 1440px) {
+  .form__title {
+    font-size: 3rem;
+    padding: 0;
+  }
 }
 
 .form {
@@ -319,11 +358,29 @@ textarea {
   padding: 1rem;
 }
 
-.footer_img {
+@media (min-width: 1440px) {
+  .footer {
+    background: url('../images/puntitos.png');
+    background-color: var(--casiBlanco);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.125rem 16rem 4rem 5rem;
+  }
+}
+
+.footer__img {
   margin-top: 3.313rem;
   width: 4.8rem;
   height: auto;
   max-width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .footer__img {
+    width: 7rem;
+  }
 }
 
 .footer__copyright {
@@ -337,18 +394,38 @@ textarea {
   list-style: none;
 }
 
+@media (min-width: 1440px) {
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
 .footer__link {
   margin-bottom: 1.813rem;
+}
+
+@media (min-width: 1440px) {
+  .footer__link {
+    margin-bottom: 3rem;
+  }
 }
 
 .footer__link:last-child {
   margin-bottom: 7.063rem;
 }
 
+@media (min-width: 1440px) {
+  .footer__link:last-child {
+    margin: 0;
+  }
+}
+
 .footer__links a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   text-decoration: none;
   color: inherit;
 }

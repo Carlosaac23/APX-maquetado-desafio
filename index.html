@@ -82,25 +82,31 @@
     </section>
 
     <section class="section__form" id="form">
-      <h2 class="form__title">Escribime</h2>
+      <div class="form__left">
+        <h2 class="form__title">Escribime</h2>
+      </div>
 
-      <form class="form">
-        <label for="name" class="form__label">Nombre</label>
-        <input type="text" name="name" id="name" />
+      <div class="form__right">
+        <form class="form">
+          <label for="name" class="form__label">Nombre</label>
+          <input type="text" name="name" id="name" />
 
-        <label for="email" class="form__label">Email</label>
-        <input type="email" name="email" id="email" />
+          <label for="email" class="form__label">Email</label>
+          <input type="email" name="email" id="email" />
 
-        <label for="message" class="form__label">Mensaje</label>
-        <textarea name="message" id="message"></textarea>
+          <label for="message" class="form__label">Mensaje</label>
+          <textarea name="message" id="message"></textarea>
 
-        <button type="submit" class="form__btn">Enviar</button>
-      </form>
+          <button type="submit" class="form__btn">Enviar</button>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">
-      <img src="assets/images/logo.svg" alt="" class="footer_img" />
-      <p class="footer__copyright">&#169; 2025 Marce</p>
+      <div class="footer__brand">
+        <img src="assets/images/logo.svg" alt="" class="footer__img" />
+        <p class="footer__copyright">&#169; 2025 Marce</p>
+      </div>
 
       <ul class="footer__links">
         <li class="footer__link">
